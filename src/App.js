@@ -15,7 +15,7 @@ const App =  ()=> {
     const searcMovies = async(title)=>{
     const response = await fetch(`${API_URL}&s=${title}`)
     const data = await response.json();
-    setMovies(data.search)
+    setMovies(data.Search)
     }
     useEffect(()=>{
      searcMovies('spiderman')
